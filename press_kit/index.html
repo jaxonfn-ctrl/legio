@@ -1,0 +1,133 @@
+<title>Legio Press Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: the game's own parchment and oxblood; a fact sheet set like a legion's roll beside the story, then the screens in a row. */
+:root {
+  --bg: #f3ecdd; --card: #fbf6ea; --ink: #2a211a; --faded: #6b5f50; --rule: #cfc3ac; --accent: #8b1e1a;
+  --display: "Marcellus", "Palatino", Georgia, serif;
+  --body: "Source Serif 4", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1b1815; --card: #26221d; --ink: #efe6d6; --faded: #aa9d8a; --rule: #40382f; --accent: #d9675c; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #1b1815; --card: #26221d; --ink: #efe6d6; --faded: #aa9d8a; --rule: #40382f; --accent: #d9675c; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 17px/1.6 var(--body); }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 48px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: minmax(0, 1fr); gap: 56px; }
+header { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+header img { width: 112px; height: 112px; border-radius: 24px; flex: none; }
+header div { flex: 1 1 280px; min-width: 0; }
+h1 { font: 400 clamp(44px, 9vw, 72px)/1 var(--display); letter-spacing: .04em; margin: 0 0 8px; }
+h2 { font: 400 26px/1.2 var(--display); letter-spacing: .03em; margin: 0 0 14px; color: var(--accent); text-wrap: balance; }
+h3 { font: 600 17px/1.3 var(--body); margin: 0 0 4px; }
+p { margin: 0 0 14px; max-width: 65ch; }
+.lede { font-size: 20px; line-height: 1.45; margin: 0; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: start; }
+dl { margin: 0; background: var(--card); padding: 20px; border-radius: 6px; display: grid; gap: 12px; }
+dt { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--faded); }
+dd { margin: 0; font-variant-numeric: tabular-nums; }
+.features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; }
+.features p { margin: 0; }
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); gap: 16px; overflow-x: auto; padding-bottom: 8px; }
+figure { margin: 0; min-width: 0; }
+figure img { width: 100%; border-radius: 14px; display: block; border: 1px solid var(--rule); }
+figcaption { font-size: 14px; color: var(--faded); padding-top: 8px; line-height: 1.35; }
+.scroll-note, .note { font-size: 15px; color: var(--faded); }
+.events { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.events li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; }
+.events b { font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+a { color: var(--accent); }
+.credits { display: grid; gap: 10px; }
+.credits dt { margin-top: 4px; }
+@media (max-width: 720px) { .two, .features { grid-template-columns: minmax(0, 1fr); gap: 28px; } .wrap { gap: 44px; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <img src="legio_icon_1024.png" alt="The Legio app icon: a crested bronze helmet and a red shield">
+    <div>
+      <h1>LEGIO</h1>
+      <p class="lede">Life of a Legionary. A story-driven life sim for iPhone: live one Roman soldier's life through the wars of the Republic, and try to come home.</p>
+    </div>
+  </header>
+
+  <section class="two">
+    <div>
+      <h2>About the game</h2>
+      <p>It is the spring of 343 BC. Rome is a hard little city of farmers, and it is going to war with the Samnites in the mountains to the south. You are seventeen, your family has a farm, and your name is on the levy list. Legio follows one citizen-soldier through the wars that made Rome the master of Italy, season by season: the marches and battles, the men who share your tent, the farm waiting at home, and the long climb through the ranks.</p>
+      <p>The story follows real events from 343 to 314 BC, among them the battle of Mount Gaurus, the mutiny of 342, the Latin War, the Roman surrender at the Caudine Forks and the defeat at Lautulae. Your choices decide how you come through them. Battles, festering wounds and camp fever all kill, and when you fall, your son or brother can take up your shield and carry the family on.</p>
+      <p>Each scene carries a note on what really happened, naming the ancient source or marking the scene as reconstructed. Every Roman term is explained where you meet it and every place carries its modern name, so a player needs no history to begin.</p>
+      <h3>In one sentence</h3>
+      <p>A story-driven iPhone life sim in which you live, and probably die, as a Roman legionary in the 4th century BC.</p>
+    </div>
+    <dl>
+      <div><dt>Name</dt><dd>Legio: Life of a Legionary</dd></div>
+      <div><dt>Developer</dt><dd>Jaxon Norman</dd></div>
+      <div><dt>Platform</dt><dd>iPhone, iOS 17 or later</dd></div>
+      <div><dt>Status</dt><dd>Public beta on TestFlight; App Store release to follow</dd></div>
+      <div><dt>Price</dt><dd>One-time purchase. No ads, no in-app purchases, no accounts, no tracking</dd></div>
+      <div><dt>Genre</dt><dd>Story-driven life sim, historical role-playing</dd></div>
+      <div><dt>Setting</dt><dd>Italy, 343–314 BC</dd></div>
+      <div><dt>Story</dt><dd>830 story scenes, about 450,000 words</dd></div>
+      <div><dt>Length</dt><dd>A full game takes 10 to 13 hours; each new game reads differently</dd></div>
+      <div><dt>Reference</dt><dd>90 Codex entries, 87 glossary terms</dd></div>
+      <div><dt>Music</dt><dd>Original score: 31 tracks and stings</dd></div>
+      <div><dt>Beta link</dt><dd><a href="https://testflight.apple.com/join/gfgbgYMa">testflight.apple.com/join/gfgbgYMa</a></dd></div>
+      <div><dt>Press contact</dt><dd><a href="mailto:jaxonfn@gmail.com?subject=Legio">jaxonfn@gmail.com</a></dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>What sets it apart</h2>
+    <div class="features">
+      <div><h3>A whole life, not a level</h3><p>Rank is earned again every year, from common soldier to optio, centurion and tribune. The family's farm, debts, marriages and children carry on while you march.</p></div>
+      <div><h3>Choices, not odds</h3><p>Every choice says what it tests, such as Strength, Sword or Charisma, but never your chances. Nine attributes and five skills grow with what you actually do.</p></div>
+      <div><h3>Fights you can read</h3><p>Duels are turn-based and every roll is shown on screen. Your breath, nerve, balance and wounds change what you can do next, and in the battle line your whole tent fights as one file.</p></div>
+      <div><h3>Every enemy is a man</h3><p>Each opponent is rolled from his experience and his people, and follows the same rules you do. One spearman is a frightened boy and the next a hard old veteran.</p></div>
+      <div><h3>Many ways to serve</h3><p>Stand in the line, command a century, or stand for election as a military tribune. Born to a family of horse-breeders, you ride with the cavalry and raise war horses on the farm at home.</p></div>
+      <div><h3>A family that outlasts you</h3><p>Death is common. An heir inherits the farm, part of the coin and something of the family's name, and the family record keeps every man who served.</p></div>
+      <div><h3>Twelve ways to begin</h3><p>Grow up a farmer's son, a fisherman's, a smith's or a freedman's, among a dozen upbringings, each with its own first scenes at home before the levy.</p></div>
+      <div><h3>History with its sources</h3><p>Scenes draw on Livy, Polybius and other ancient writers, and say plainly when a detail is reconstructed. A Codex of everything you learn is kept across every life.</p></div>
+      <div><h3>A map that changes with the war</h3><p>A hand-drawn map of Italy shows where the year has taken you, the battles you fought, and who held the land, year by year.</p></div>
+      <div><h3>An original score</h3><p>Music for every part of a life, from the farm and the march to the battle line, the triumph and the lament, with stings for promotions, wounds, births and deaths.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Screens</h2>
+    <div class="shots">
+      <figure><img src="screenshots/01_title.png" alt="The title screen: a Roman soldier looking out over the Italian countryside at sunset"><figcaption>One soldier's life in the Roman Republic.</figcaption></figure>
+      <figure><img src="screenshots/02_levy.png" alt="The levy on the Capitol in 343 BC, with a pixel-art picture of the crowd"><figcaption>Answering the levy of 343 BC.</figcaption></figure>
+      <figure><img src="screenshots/03_battle.png" alt="The battle of Mount Gaurus, with the battle banner and the opening of the scene"><figcaption>The battle of Mount Gaurus.</figcaption></figure>
+      <figure><img src="screenshots/04_duel.png" alt="A duel with a Samnite champion, with health, breath, nerve and balance bars"><figcaption>A duel: every man has health, breath, nerve and balance.</figcaption></figure>
+      <figure><img src="screenshots/05_map.png" alt="The map of Italy with Rome's lands, its allies and its enemies marked"><figcaption>The map shows who held the land, year by year.</figcaption></figure>
+      <figure><img src="screenshots/06_camp.png" alt="Days in camp, choosing between duty, training, camp work and rest"><figcaption>Days in camp: train, rest and keep your kit.</figcaption></figure>
+      <figure><img src="screenshots/07_horse_farm.png" alt="A horse-breeder's story card: a mare in trouble at night"><figcaption>The horse-breeders' farm.</figcaption></figure>
+      <figure><img src="screenshots/08_yourself.png" alt="The Yourself screen, with standing, the next rank and the attributes"><figcaption>Rank is earned again every year.</figcaption></figure>
+    </div>
+    <p class="note">Full-size files are in the kit's screenshots folder (1206 × 2622), free to use in coverage. Scroll sideways to see them all.</p>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>The history in the game</h2>
+      <ul class="events">
+        <li><b>343 BC</b><span>The first war with the Samnites: the battle of Mount Gaurus, or, if the lot sends you with the other consul, the fight for Decius&rsquo;s hill near Saticula.</span></li>
+        <li><b>342 BC</b><span>The soldiers' mutiny over debt.</span></li>
+        <li><b>340 BC</b><span>The Latin War: a consul executes his own son for fighting against orders, and another gives his life to the gods at Veseris.</span></li>
+        <li><b>327 BC</b><span>The siege of the Greek city of Palaepolis, beside Neapolis.</span></li>
+        <li><b>321 BC</b><span>A Roman army is trapped at the Caudine Forks and sent under the yoke.</span></li>
+        <li><b>315 BC</b><span>Defeat in the pass at Lautulae.</span></li>
+        <li><b>314 BC</b><span>Victory on the plain by Tarracina.</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Credits</h2>
+      <dl class="credits">
+        <div><dt>Game design, writing and direction</dt><dd>Jaxon Norman</dd></div>
+        <div><dt>Music</dt><dd>Dallin Osborne and Jaxon Norman</dd></div>
+        <div><dt>Art</dt><dd>Imagine Studios</dd></div>
+        <div><dt>Historical sources</dt><dd>Livy, Polybius, Varro, Cato, Plutarch, Dionysius of Halicarnassus and others</dd></div>
+      </dl>
+      <p class="note" style="margin-top:14px">For review copies, interviews or anything else, write to <a href="mailto:jaxonfn@gmail.com?subject=Legio">jaxonfn@gmail.com</a>.</p>
+    </div>
+  </section>
+</div>
